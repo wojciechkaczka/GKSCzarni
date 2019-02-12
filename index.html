@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Czarni Starcza</title>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+	<nav>
+		<ul class="topnav" id="dropdownClick">
+			<li><a class="active" href="#home">Home</a></li>
+			<li><a href="#News">News</a></li>
+			<li><a href="#Foto">Zdjęcia</a></li>
+			<li><a href="#table">Tabela</a></li>
+			<li><a href="#team">Drużyna</a></li>
+			<li><a href="#sponsors">Sponsorzy</a></li>
+			<li><a href="#shop">Sklep</a></li>
+			<li><a href="#contact">Kontakt</a></li>
+			<li class="topnav-right"><a href="#signup">Zaloguj</a></li>
+			<li class="topnav-right"><a href="#signin">Zarejestruj</a></li>
+			<li class="dropdownIcon"><a href="javasript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+		</ul>
+	</nav>
+
+	<div class="container" id="section-1-gradient">
+		<div class="row">
+			<div class="col-6">
+				<div class="leftSide-col">
+					<img class="logoGKS" src="img/godlo.jpg" alt="godlo klubu">
+				</div>
+			</div>
+
+			<div class="col-6">
+				<div class="rightSide-col">
+					<h1 class="large">GKS CZARNI STARCZA</h1>
+					<h1 class="large">SEKCJA KOSZYKÓWKI</h1>
+				</div>
+				<form>
+					<div class="rightSide-col">
+						<h2>Login</h2>
+						<input class="inputbox" name="username" type="text" placeholder="Username">
+						<h2>Hasło</h2>
+						<input class="inputbox" name="password" type="text" placeholder="Password">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<header>
+		<h1 class="section2Header">Aktualności</h1>
+	</header>
+	<div class="container">
+		<div class="row">
+			<div class="col-4">
+			  <div class="box">
+			    
+			  </div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<script>
+		function dropdownMenu() {
+			var x = document.getElementById("dropdownClick");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+				/*change top nav to topnav.responsive*/
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+
+</body>
+
+</html>
